@@ -1,0 +1,34 @@
+### read
+get http://localhost:3000/players
+
+### read by id
+get http://localhost:3000/players/apcj3hklbge9fnr-
+
+### delete
+delete http://localhost:3000/players/apcj3hklbge9fnr
+
+### post
+post http://localhost:3000/players
+Content-Type: application/json
+
+{
+    "name": "Neymar",
+    "qualification": 8,
+    "position": "csatár",
+    "club": "Sehol",
+    "age": 37,
+    "nationality": "Brazil"
+}
+
+### put
+put http://localhost:3000/players/apcjcnolbnm5kj9
+Content-Type: application/json
+
+{
+    "name": "<script>alert('betörtem')</script>Neymar3",
+    "qualification": "<script>alert('betörtem')</script>Neymar",
+    "position": "csatár2",
+    "club": "Seholse",
+    "age": 42,
+    "nationality": "Bazília"
+}
