@@ -19,6 +19,14 @@ const corstParams = {
 
 app.use(cors(corstParams));
 
+app.get('/focistak', function(req, res){
+    res.sendFile(path.join(__dirname, "./frontend/playerTable.html"));
+})
+
+app.get('/table.js', function(req, res){
+    res.sendFile(path.join(__dirname, "./frontend/table.js"));
+})
+
 //get adatbevitel
 app.get('/adatbevitel', function(req, res){
     res.sendFile(path.join(__dirname, "./frontend/appendForm.html"));
